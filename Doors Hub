@@ -84,8 +84,6 @@ Scripts.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
 Scripts.Position = UDim2.new(-0.00121205649, 0, 0.271428585, 0)
 Scripts.Size = UDim2.new(0, 190, 0, 241)
 Scripts.Visible = false
-Scripts.Active = true
-Scripts.Draggabe = true
 
 DoorsHubScripts.Name = "Doors Hub Scripts"
 DoorsHubScripts.Parent = Scripts
